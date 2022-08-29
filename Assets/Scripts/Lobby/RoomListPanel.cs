@@ -26,9 +26,9 @@ namespace Game.Lobby
 
         public void UpdateRoomList(List<SessionInfo> sessionList)
         {
-            foreach(var cell in roomCells)
+            foreach(Transform child in contentTrans)
             {
-                Destroy(cell.gameObject);
+                Destroy(child.gameObject);
             }
 
             roomCells.Clear();
