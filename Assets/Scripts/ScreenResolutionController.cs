@@ -6,6 +6,6 @@ public class ScreenResolutionController : MonoBehaviour
 {
     private void Start()
     {
-        Screen.SetResolution(1920, 1080, false);
+        Screen.SetResolution(960, 540, false);
     }
 }

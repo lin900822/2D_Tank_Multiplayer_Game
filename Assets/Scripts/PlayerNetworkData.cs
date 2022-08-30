@@ -10,8 +10,6 @@ namespace Game.Core
 
 		[Networked(OnChanged = nameof(OnPlayerNameChanged))] public string PlayerName { get; set; }
 		[Networked(OnChanged = nameof(OnIsReadyChanged))] public NetworkBool IsReady { get; set; }
-
-		[Networked] public int KillAmount { get; set; }
 		
 		[Networked] public Color TankColor { get; set; }
 
